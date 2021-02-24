@@ -16,6 +16,8 @@
     <input type="text" name="nombre" id="nombre">
     <label for="apellido">Apellido:</label>
     <input type="text" name="apellido" id="apellido">
+    <label for="telefono">Telefono:</label>
+    <input type="text" name="telefono" id="telefono">
     <input type="submit" value="Registrar" name="btnregistrar">
     </form>
     </center>
