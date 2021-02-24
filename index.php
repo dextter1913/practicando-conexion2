@@ -25,14 +25,15 @@
     if (isset($_POST['btnregistrar'])) {
         $_id = $_POST['id'];
         $_nombre = $_POST['nombre'];
-        $_apellido = $_POST['apelido'];
+        $_apellido = $_POST['apellido'];
         $_telefono = $_POST['telefono'];
 
         include("./clases/open_conexion.php");
 
-        $conexion->query("INSERT INTO $taba(id,nombre,apellido,telefono) VALUES('$_id','$_nombre','$_apellido','$_telefono')");
+        $conexion->query("INSERT INTO $tabla(id,nombre,apellido,telefono) VALUES('$_id','$_nombre','$_apellido','$_telefono')");
 
-        include("./clases/close_conexion.php")
+        include("./clases/close_conexion.php");
+        echo "Registro agregado correctamente";
     }
     ?>
 </body>
